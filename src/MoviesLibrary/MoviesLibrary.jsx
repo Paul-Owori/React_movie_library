@@ -4,7 +4,9 @@ class MoviesLibrary extends Component {
   state={
     title:"",
     description:"",
-    genre:""
+    genre:"",
+    actors:{actorList:["Actor1","Actor2","Actor3"]},
+    name:"Paul"
   }
 
 
@@ -23,7 +25,8 @@ class MoviesLibrary extends Component {
      [this.description.name]:this.description.value,
      [this.genre.name]:this.genre.value
    }, () => {
-     console.log(this.state)
+     console.log("THIS==>>",this)
+     console.log("STATE==>>",this.state)
    })
 
  }
